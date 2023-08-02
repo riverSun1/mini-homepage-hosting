@@ -1,0 +1,123 @@
+.mid_diary {
+    margin: 15px;
+    width: 550px;
+    height: 450px;
+}
+
+
+.mid_date {
+    width: 520px;
+    height: 50px;
+    border: 1px solid rgb(175, 174, 174);
+    padding: 13px;
+    margin-bottom: 13px;
+    display: flex;
+    flex-direction: row;
+    background-color: #e0dcdf;
+}
+
+
+.mid_date_today {
+    text-align: center;
+    margin-right: 20px;
+}
+
+
+.mid_diary_outer {
+    width: 550px; 
+    height: 410px;
+    overflow: auto;
+}
+
+
+.mid_diary_inner {
+    border: 1px solid rgb(175, 174, 174);
+    padding: 22px;
+    margin-bottom: 21px;
+    background-color: #f8edf5;
+}
+
+
+.mid_diary_contents {
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+.mid_button_box {
+    text-align: center;
+    margin-top: 21px;
+}
+
+
+.diary_button {
+    transition: 800ms ease all;
+    color: white;
+    background: white;
+    border: none;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+
+.diary_button:hover {
+    transition: 800ms ease all;
+    color: white;
+    background: #15a384;
+    border: none;
+    padding: 15px;
+}
+
+.fa-lock{
+    color: white;
+    margin-right: 13px;
+}
+
+.mid_date_today{
+    color: rgb(60, 109, 141);
+    font-weight: 1000;
+}
+
+.mid_date_day > .sat{
+    color: blue;
+    font-weight: 500;
+}
+
+.mid_date_day > .sun{
+    color: red;
+    font-weight: 500;
+}
+
+.mid_date_day > span{
+    padding-right: 8px;
+}
+
+.mid_diary_date{
+    color: #d620af;
+    font-weight: 1000;
+}
+
+#secret_box {
+    display: none;
+  }
+
+.secret_diary:hover{
+    background-color: rgb(56, 158, 133);
+    border: none;
+}
+
+.secret_diary{
+    background-color: rgb(255, 255, 255);
+    color: white;
+    margin: 0 auto;
+    height: 50px;
+    border: none;
+    font-family: 'NeoDunggeunmo';
+    font-size: 14px;
+    margin: auto; 
+    display: block;
+}
+
+.diary_text{
+    text-align: center;
+}

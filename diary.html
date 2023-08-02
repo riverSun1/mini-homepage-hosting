@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sun1's MINI HOMEPAGE</title>
+        <link rel="stylesheet" href="./static/font.css" />
+        <link rel="stylesheet" href="./static/layout.css" />
+        <link rel="stylesheet" href="./static/diary.css" />
+        <!--fontawesome-->
+    </head>
+    <body>
+        <div class="bookcover">
+            <div class="bookdot">
+                <div class="page">
+                    <div class="column1">
+                        <div class="row1">
+                           <br>
+                           Today <span style="color: red;">28</span> | TOTAL 7777777
+                        </div>
+                        <div class="row2 box">
+                            <div class="row6">
+                                <img src="./static/images/cat.jpg" alt="춘식이" width="167" height="180">
+                            </div>
+                            <div class="row7">
+                                <b>라이언의 반려동물 춘식.</b>
+                                <br><br>
+                                동네 길목에 버려진 춘식이를 라이언이 냥줍해서 기르고 있는중이다. 사료나 생선은 먹지 않으며 고구마를 좋아한다.<br>
+                            </div>
+                            <div class="row8">
+                                <div class="dropdown">
+                                    <span class="dropdown_name">춘식이</span>
+                                </div>
+                                <div class="dropdown_container">
+                                    <div class="dropdown_btn">
+                                        <div class="dropdown_title">춤추기</div>
+                                        <div class="triangle_down"></div>
+                                    </div>
+                                    <div class="dropdown_content">
+                                        <a href="https://www.kakaocorp.com/page/" target="_blank">카카오</a>
+                                        <a href="https://store.kakaofriends.com/index/today" target="_blank">카카오프렌즈</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column2">
+                        <div class="row4">
+                            <br>
+                            <span>sun1의 미니홈피✿˘◡˘✿</span>
+                            <span style="margin-left: 50px;">url주소입력</span>
+                        </div>
+                        <div class="row5 box">
+                            <div class="mid_diary">
+                                <div class="mid_date">
+                                    <div class="mid_date_today">01.24<br>MON</div>
+                                    <div class="mid_date_day">
+                                        <span class="sat">1</span>
+                                        <span class="sun">2</span>
+                                        <span>3</span>
+                                        <span>4</span> 
+                                        <span>5</span> 
+                                        <span>6</span> 
+                                        <span>7</span>
+                                        <span class="sat">8</span>
+                                        <span class="sun">9</span>
+                                        <span>10</span>
+                                        <span>11</span>
+                                        <span>12</span>
+                                        <span>13</span>
+                                        <span>14</span>
+                                        <span class="sat">15</span>
+                                        <span class="sun">16</span>
+                                        <span>17</span>
+                                        <span>18</span>
+                                        <br>
+                                        <span>19</span>
+                                        <span>20</span>
+                                        <span>21</span>
+                                        <span class="sat">22</span>
+                                        <span class="sun">23</span>
+                                        <span>24</span>
+                                        <span>25</span>
+                                        <span>26</span>
+                                        <span>27</span>
+                                        <span>28</span>
+                                        <span class="sat">29</span>
+                                        <span class="sun">30</span>
+                                        <span>31</span>
+                                    </div>
+                                </div>
+                                <div class="mid_diary_outer">
+                                    <div class="mid_diary_inner">
+                                        <div class="mid_diary_date">2022.01.23 화 12:12</div>
+                                        <div class="mid_diary_contents">
+                                            내가 원하는 대로 자신 있는 모습 그대로<br>
+                                            이제껏 숨겨 왔던 비밀을<br>
+                                            네게 모두 말하고 싶어<br>
+                                        </div>
+                                    </div>
+                                    <div class="mid_diary_inner">
+                                        <div class="mid_diary_date">2022.04.05 수 12:34</div>
+                                        <div class="mid_diary_contents">
+                                            처음 느낌인 것처럼<br>
+                                            짜릿했던 순간 그대로야 지금 난<br>
+                                            마치 약속했던 것 같아<br>
+                                        </div>
+                                    </div>
+                                    <div class="mid_diary_inner">
+                                        <div class="mid_diary_date">2022.06.07 금 12:56</div>
+                                        <div class="mid_diary_contents">
+                                            언제나 둘이 함께<br>
+                                            네가 있는 나 행복할 거예요<br>
+                                            더는 슬픈 노래 듣지 않을 거예요<br>
+                                        </div>
+                                    </div>
+
+                                    <div class="mid_button_box">
+                                        <button class="diary_button" onclick="getTextFile()">
+                                            <i class="fas fa-lock"></i>sun1의 비밀일기 보기
+                                        </button>
+                                    </div>
+                                    <div class="mid_diary_inner" id="secret_box">
+                                        <div class="mid_diary_date">sun1의 비밀 일기</div>
+                                        <div class="diary_text font-kyobohand" id="secret_diary"></div>
+                                    </div>
+                                </div>                              
+                            </div>                        
+                        </div>
+                    </div>
+                    <div class="menubar">
+                        <a href="./home.html">홈</a>
+                        <a href="./diary.html">다이어리</a>
+                        <a href="./photo.html">사진첩</a>
+                        <a href="./guestbook.html">방명록</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function getTextFile() {
+                var input = document.createElement("input");
+                input.type = "file";
+                input.accept = "text/plain";
+                input.onchange = function (event) {
+                processFile(event.target.files[0]);
+                };
+                input.click();
+            }
+            function processFile(file) {
+                var reader = new FileReader();
+                reader.readAsText(file, "utf-8");
+
+                reader.onload = function () {
+                document.getElementById("secret_diary").innerText = reader.result;
+                document.getElementById("secret_box").style.display = "block";
+                };
+            }
+        </script>
+    </body>
+</html>

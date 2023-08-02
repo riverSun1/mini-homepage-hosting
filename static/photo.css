@@ -1,0 +1,32 @@
+.container_scroll{
+    width: 560px;
+    height: 510px;
+    overflow: auto;
+    margin: 10px;
+}
+
+.photo_title{
+    background-color: #5b585c;
+    border-radius: 8px;
+    color: #ffffff;
+    padding: 7px 20px;
+}
+
+.photo_contents{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 35px;
+    background-color: #cac4cc;
+}
+
+.photo_container{
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.photo_contents > img{
+    margin-top: 20px;
+}

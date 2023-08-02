@@ -1,0 +1,49 @@
+.container_scroll{
+    width: 560px;
+    height: 510px;
+    overflow: auto;
+    margin: 10px;
+}
+
+.photo_title{
+    background-color: #ad9faa;
+    color: #000000;
+    padding: 10px 20px;
+    width: 480px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+}
+
+.photo_contents{
+    width: 490px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 35px;
+    background-color: #eeeaed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.photo_container{
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.photo_contents > img{
+    margin-top: 20px;
+    width: 130px;
+    height: 130px;
+}
+
+.photo_contents > span{
+    padding-left: 15px;
+}
+
+.guest_name
+{
+    color: blue;
+}
